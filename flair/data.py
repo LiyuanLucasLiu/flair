@@ -405,7 +405,8 @@ class NLPTaskDataFetcher:
 
         if task == NLPTask.CONLL_03 or task == NLPTask.ONTONER or task == NLPTask.FASHION:
 
-            data_folder = os.path.join('resources', 'tasks', 'conll_03')
+            # data_folder = os.path.join('resources', 'tasks', 'conll_03')
+            data_folder = '/srv/local/work/ll2/HeMo/data/ner'
             if task == NLPTask.ONTONER: data_folder = os.path.join('resources', 'tasks', 'onto-ner')
             if task == NLPTask.FASHION: data_folder = os.path.join('resources', 'tasks', 'fashion')
 
